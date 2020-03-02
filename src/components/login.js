@@ -30,7 +30,10 @@ class Login extends Component {
     }
     toggleShow=(e)=> {
         e.preventDefault();
-        this.setState({ hidden: !this.state.hidden });
+        this.setState((prevState) => {
+            return {hidden: !prevState.hidden};
+        });
+//         this.setState({ hidden: !this.state.hidden });
     }
     handlelogin=(e)=> {
         
