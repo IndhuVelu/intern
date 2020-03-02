@@ -49,19 +49,18 @@ import moment from 'moment'
               .then(res=> res.json())
               .then(data=>
                 {
-                    if(data === []){
+                    
                         this.setState({
                             msg:this.state.msg
                         })
-                    }
-                    else{
+                    
                         data.forEach(element => {
                             this.setState({
                                 train:[...this.state.train,element]
                             })
                         });
                     
-                    }
+                    
                 })
         }
      }
