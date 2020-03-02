@@ -70,7 +70,10 @@ class Register extends Component {
         break;
     }
 
-    this.setState({ errors, [name]: value });
+//     this.setState({ errors, [name]: value });
+      this.setState((prevState) => {
+            return { errors, [name]: value};
+        });
   };
 
   handleSubmit = event => {
