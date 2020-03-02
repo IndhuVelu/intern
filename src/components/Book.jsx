@@ -171,7 +171,7 @@ var count = 0;
                 <div className="header">
                   <label> Traveller Details </label> <br/> 
                    {this.state.total.map(e=>
-                        <Details 
+                        <Details key={element.key}
                             value={e}
                             DetailsChange={(a,e)=>this.DetailsChange(a,e)} />
                    )}
