@@ -25,11 +25,17 @@ class Resetpass extends Component {
       }
     toggleShow=(e)=> {
         e.preventDefault();
-        this.setState({ hidden: !this.state.hidden });
+        this.setState((prevState) => {
+            return {hidden: !prevState.hidden};
+        });
+//         this.setState({ hidden: !this.state.hidden });
     }
     toggleShow1=(e)=> {
         e.preventDefault();
-        this.setState({ hidden: !this.state.hidden });
+        this.setState((prevState) => {
+            return {hidden: !prevState.hidden};
+        });
+//         this.setState({ hidden: !this.state.hidden });
     }
     handleChangeNewPass=(e)=> {
         this.setState({ newpass: e.target.value});  
@@ -52,8 +58,10 @@ class Resetpass extends Component {
           default:
             break;
         }
-    
-        this.setState({ errors, [name]: value });
+    this.setState((prevState) => {
+            return {errors, [name]: !prevState. value};
+        });
+//         this.setState({ errors, [name]: value });
       };
     
     handleChangeConfrimPass=(e)=> {
