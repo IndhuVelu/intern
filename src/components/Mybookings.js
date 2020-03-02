@@ -67,8 +67,8 @@ class Mybookings extends Component {
                 this.check();
     }
     changeBook=()=>{
-        this.setState({
-            complete:!this.state.complete
+           this.setState((prevState) => {
+            return {   complete: ! prevState.complete };
         },()=>this.check())
         
     }
