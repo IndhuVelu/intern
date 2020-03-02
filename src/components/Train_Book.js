@@ -301,16 +301,25 @@ handleTo=(e)=>{
         })
     }
     handleNameRevSort=(e)=> {
-        this.setState({
-            icondown:!this.state.icon,
-            icondown1:false,
-            icondown2:false,
-            icon:false,
-            icon1:false,
-            icon2:false,
+      this.setState((prevState) => {
+            return {
+                    icondown:! prevState.icon,
+                    icon1:false,
+                    icon2:false,
+                    icon:false,
+                    icondown1:false,
+                    icondown2:false};
+        });
+//         this.setState({
+//             icondown:!this.state.icon,
+//             icondown1:false,
+//             icondown2:false,
+//             icon:false,
+//             icon1:false,
+//             icon2:false,
 
 
-        })
+//         })
     
 
         fetch('http://localhost:3050/namerevsort',{
@@ -331,14 +340,23 @@ handleTo=(e)=>{
         })
     }
   handleDepartSort=(e)=> {
-    this.setState({
-        icon1:!this.state.icon,
-        icon:false,
-        icon2:false,
-        icondown:false,
-        icondown1:false,
-        icondown2:false
-    })
+    this.setState((prevState) => {
+            return {
+                    icon1:! prevState.icon,
+                    icondown:false,
+                    icon2:false,
+                    icon:false,
+                    icondown1:false,
+                    icondown2:false};
+        });
+//     this.setState({
+//         icon1:!this.state.icon,
+//         icon:false,
+//         icon2:false,
+//         icondown:false,
+//         icondown1:false,
+//         icondown2:false
+//     })
   
 
         fetch('http://localhost:3050/departsort',{
@@ -358,14 +376,23 @@ handleTo=(e)=>{
         })
     }
     handleDepartRevSort=(e)=> {
-        this.setState({
-            icondown1:!this.state.icon,
-            icondown:false,
-            icondown2:false,
-            icon:false,
-            icon1:false,
-            icon2:false,
-        })
+      this.setState((prevState) => {
+            return {
+                    icondown1:! prevState.icon,
+                    icondown:false,
+                    icon2:false,
+                    icon:false,
+                    icon1:false,
+                    icondown2:false};
+        });
+//         this.setState({
+//             icondown1:!this.state.icon,
+//             icondown:false,
+//             icondown2:false,
+//             icon:false,
+//             icon1:false,
+//             icon2:false,
+//         })
     
             fetch('http://localhost:3050/departrevsort',{
             method:"POST",
@@ -384,14 +411,23 @@ handleTo=(e)=>{
             })
         }
     handleArrivesSort=(e)=> {
-        this.setState({
-            icon2:!this.state.icon,
-            icon1:false,
-            icon:false,
-            icondown:false,
-            icondown1:false,
-            icondown2:false
-        })
+      this.setState((prevState) => {
+            return {
+                    icon2:! prevState.icon,
+                    icondown:false,
+                    icondown1:false,
+                    icon:false,
+                    icon1:false,
+                    icondown2:false};
+        });
+//         this.setState({
+//             icon2:!this.state.icon,
+//             icon1:false,
+//             icon:false,
+//             icondown:false,
+//             icondown1:false,
+//             icondown2:false
+//         })
       
         fetch('http://localhost:3050/arrivalsort',{
         method:"POST",
@@ -410,14 +446,23 @@ handleTo=(e)=>{
         })
     }
     handleArrivesRevSort=(e)=> {
-        this.setState({
-            icondown2:!this.state.icon,
-            icondown1:false,
-            icondown:false,
-            icon:false,
-            icon1:false,
-            icon2:false,
-        })
+      this.setState((prevState) => {
+            return {
+                    icondown2:! prevState.icon,
+                    icondown:false,
+                    icondown1:false,
+                    icon:false,
+                    icon1:false,
+                    icon2:false};
+        });
+//         this.setState({
+//             icondown2:!this.state.icon,
+//             icondown1:false,
+//             icondown:false,
+//             icon:false,
+//             icon1:false,
+//             icon2:false,
+//         })
 
 
 
