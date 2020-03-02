@@ -42,7 +42,10 @@ class Register extends Component {
   }
   toggleShow1=(e)=> {
     e.preventDefault();
-    this.setState({ hidden: !this.state.hidden });
+      this.setState((prevState) => {
+            return {hidden: prevState.!this.state.hidden};
+        });
+//     this.setState({ hidden: !this.state.hidden });
 }
 
   handleChange = event => {
