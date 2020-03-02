@@ -520,7 +520,7 @@ handleTo=(e)=>{
                     <div id="wholedisplay_from">
                     {
                      this.state.from1.map(element =>(
-                    <div> <li className="fromdisplay" id="fromdisplay" data-front={element}    onClick= {e => this.handledisplay(e) }>{element}</li> </div>
+                    <div> <li className="fromdisplay" key={element.key} id="fromdisplay" data-front={element}    onClick= {e => this.handledisplay(e) }>{element}</li> </div>
 
                     ))
                      }
@@ -530,7 +530,7 @@ handleTo=(e)=>{
                      <div id="wholedisplay_to">
                      {
                     this.state.to1.map(element =>(
-                        <div> <li className="todisplay"  id="todisplay" data-back={element} onClick= {e => this.handledisplayto(e) }>{element}</li> </div>
+                        <div> <li className="todisplay" key={element.key} id="todisplay" data-back={element} onClick= {e => this.handledisplayto(e) }>{element}</li> </div>
     
                         ))
                     }
@@ -560,7 +560,7 @@ handleTo=(e)=>{
                     <div>
                             {this.state.train.length>0?
                             this.state.train.map(element=>(
-                        <Container name={element.TrainName}departure={ tConvert (element.Depart_Time)}arrival={tConvert (element.Arrival_Time)} date= {this.state.date} id={element.id} /> 
+                        <Container  key={element.key} name={element.TrainName}departure={ tConvert (element.Depart_Time)}arrival={tConvert (element.Arrival_Time)} date= {this.state.date} id={element.id} /> 
                             ))  : 
                         
                     
