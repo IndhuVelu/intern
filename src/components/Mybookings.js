@@ -112,7 +112,7 @@ class Mybookings extends Component {
                        this.state.mybook !==true ?
                        
                        ( this.state.book .map(element => (
-                            <div> Name : {element.signup_name}  <br/> 
+                            <div key={element.key} > Name : {element.signup_name}  <br/> 
                             Train_id : {element.Trainid} <br/> 
                             Date : { moment(element.createdAt).format("MMM DD YYYY")}<br/> 
                             Seat Number : {element.seat}    <br/>  <br/></div>
@@ -129,7 +129,7 @@ class Mybookings extends Component {
                        this.state.mybook !==true ?
                        
                        ( this.state.book1 .map(element => (
-                            <div> Name : {element.signup_name}  <br/> 
+                            <div key={element.key} > Name : {element.signup_name}  <br/> 
                             Train_id : {element.Trainid} <br/> 
                             Date : { moment(element.createdAt).format("MMM DD YYYY")}<br/> 
                             Seat Number : {element.seat}    <br/>  <br/></div>
