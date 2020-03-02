@@ -1,4 +1,4 @@
-import { CanActivate,ActivatedRouteSnapshot,RouterStateSnapshot } from '@angular/router';
+import { CanActivate } from '@angular/router';
 
 
 export class AuthGuard implements CanActivate{
