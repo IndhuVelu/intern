@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './signup.css'
-import { withRouter,  Redirect } from 'react-router-dom'
+import { withRouter,   } from 'react-router-dom'
 
 class Validate_signup extends Component {
   render() {
@@ -13,12 +13,7 @@ const validEmailRegex = RegExp(
 );
 
 var userpattern=new RegExp('[0-9]')
-const validateForm = errors => {
-  let valid = true;
-  console.log(errors.Value)
-  Object.values(errors).forEach(val => val.length > 0 && (valid = false));
-  return valid;
-};
+
 
 class Register extends Component {
   constructor(props) {
