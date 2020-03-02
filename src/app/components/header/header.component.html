@@ -1,0 +1,17 @@
+
+ <div class="full">
+       <div><img class="img-responsive" width="150px" alt="Railyatri.in" src="https://images.railyatri.in/ry-logo.png"></div>
+      <div class="head"> </div>
+      <div class="user">{{this.headtoken.user.name}}
+            <div *ngIf="this.headtoken.user.name=='Indhu'">
+                  <a href="/change" >SuperAdmin</a>
+            </div>
+            <div>
+                  <a href="/change" *ngIf="this.headtoken.user.isadmin==1">Admin</a>   
+                  <a  *ngIf="this.headtoken.user.isadmin==0">User</a>   
+            </div>
+       <div class="logbtn"> <a  class="whitelink" (click)="onLogout()" > Logout </a> </div> </div>
+</div>
+   
+
+

@@ -1,0 +1,30 @@
+.btn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0px;
+}
+.com{
+    margin-top: 30px;
+}
+.heading1{   
+    background-color: #FFF; 
+    box-shadow: 40px 60px 70px 80px rgba(104, 103, 103, 0.13);
+    width: 30%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif, Tahoma, Arial;
+    font-size: 15px;
+    font-weight: 530;
+    border-radius: 12px; 
+    
+}
+a{
+    text-decoration: none;
+}

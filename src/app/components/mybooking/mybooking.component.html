@@ -1,0 +1,23 @@
+
+<div class="btn">
+    <button  mat-flat-button color="primary" (click)="onCompleted()">Completed</button>
+    <button  mat-flat-button color="primary" (click)="onUpcoming()">Upcoming</button>
+</div>
+
+<div class="com" *ngFor ="let c of completed"  >
+    <div  class="heading1" *ngIf = "this.count == 0 && this.upcome == 0 " >
+   <div> Name : {{c.signup_name}} </div> 
+    <div>Train_id : {{c.Trainid}}  </div> 
+    <div> Date : {{c.createdAt| date : "dd MMM yyyy"}} </div> 
+     <div>Seat Number : {{c.seat}}  </div>  
+</div>
+
+</div>
+<div   class="com" *ngFor ="let c of upcoming">
+    <div class="heading1" *ngIf = "this.count == 1 && this.upcome == 1 ">
+        <div> Name : {{c.signup_name}} </div> 
+        <div>Train_id : {{c.Trainid}}  </div> 
+        <div> Date : {{c.createdAt| date : "dd MMM yyyy"}} </div> 
+         <div>Seat Number : {{c.seat}}  </div>  
+    </div>
+</div>
