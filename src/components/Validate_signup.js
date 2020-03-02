@@ -72,8 +72,9 @@ class Register extends Component {
 
 //     this.setState({ errors, [name]: value });
       this.setState((prevState) => {
-            return { errors, [name]: value};
+            return { errors, [name]: prevState.value};
         });
+    
   };
 
   handleSubmit = event => {
