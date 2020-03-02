@@ -266,7 +266,7 @@ handleTo=(e)=>{
     handleNameSort=(e)=> {
         this.setState((prevState) => {
             return {
-                    icon:prevState.!this.state.icon,
+                    icon:! prevState.icon,
                     icon1:false,
                     icon2:false,
                     icondown:false,
