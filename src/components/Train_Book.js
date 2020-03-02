@@ -264,14 +264,23 @@ handleTo=(e)=>{
  
     }
     handleNameSort=(e)=> {
-        this.setState({
-            icon:!this.state.icon,
-            icon1:false,
-            icon2:false,
-            icondown:false,
-            icondown1:false,
-            icondown2:false
-        })
+        this.setState((prevState) => {
+            return {
+                    icon:prevState.!this.state.icon,
+                    icon1:false,
+                    icon2:false,
+                    icondown:false,
+                    icondown1:false,
+                    icondown2:false};
+        });
+//         this.setState({
+//             icon:!this.state.icon,
+//             icon1:false,
+//             icon2:false,
+//             icondown:false,
+//             icondown1:false,
+//             icondown2:false
+//         })
 
 
         fetch('http://localhost:3050/namesort',{
