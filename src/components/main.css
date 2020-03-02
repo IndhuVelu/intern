@@ -1,0 +1,20 @@
+.divide{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.album{
+    width: 70%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.queue{
+    margin-left: 20px;
+    width: 30%;
+    height: 100%;
+    /* background-color: aqua;  */
+}
+.inside_album{
+    width: 70%;
+    height: 100%;
+}

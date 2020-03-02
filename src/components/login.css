@@ -1,0 +1,97 @@
+body {
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background: url('http://dailyhdwallpaper.com/wp-content/uploads/Abstract-Purple-Background-Images-Wallpaper.jpg') no-repeat center center fixed;  */
+    background-size: cover;
+}
+.login {
+    color: rgb(16, 124, 128);
+    margin-left: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+.login_form{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* margin-top:100px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 65px;
+    font-size: 15px;
+    height: 400px;
+   
+}
+.login_form div{
+  margin-top: 25px;
+}
+input:focus{
+  outline: none;
+}
+
+#btn2 {
+    margin-top: 20px;
+    background-color:rgb(16, 124, 128); 
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+
+
+.icon1{
+  background-image: url('circle.png');
+ }
+ .valid{
+  border-bottom: 1.5px solid green;
+  outline:none;
+}
+.invalid{
+  border-bottom: 1.5px solid #337ab7;
+  outline:none;
+}
+.forget{
+  font-size: 20px;
+}
+.hi{
+  width: 6%;
+  height: 5%;
+  margin-left: -26px;
+  border-bottom: none;
+}
+.form_main{
+  height: 518px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  border: 5px solid #ffffff;
+  width: 470px;
+  margin-left: 300px;
+  border-radius: 14%;
+}
+.form_main2{
+
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  border: 5px solid #ffffff;
+  width: 500px;
+  margin-left:400px;
+  border-radius: 20%;
+  margin-top: 126px;
+
+}
+.reset_form1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 79px;
+  font-size: 15px; 
+}
+.reset_form1 div{
+  margin-top: 25px;
+}

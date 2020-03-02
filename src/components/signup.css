@@ -1,0 +1,95 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background: url('https://image.freepik.com/free-photo/pink-headphones-colored-surface_23-2148182034.jpg') no-repeat center center fixed;  */
+    background-size: cover;
+    background:linear-gradient(to right,#2193b0 , #6dd5ed) ;
+}
+.body{
+
+  height: 74vh;
+  width: 88vw;
+  padding-top: 80px;
+  padding-left: 60px;
+}
+.sign {
+  color:rgb(16, 124, 128);
+    margin-left: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+.signup_form{
+   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+.signup_form div{
+  margin-top: 20px;
+}
+input:focus{
+  outline: none;
+}
+ 
+.btn1 {
+    margin-top: 10px;
+ color: #ffffff; 
+ width: 100px;
+    border: none;
+    background-color:rgb(16, 124, 128);
+    border-radius: 20px;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  input{
+    width: 270px;
+    font-size: 16px;
+    border-bottom: 1.5px solid rgb(136, 233, 236);
+    background: transparent;
+    border-top:none ;
+    border-right: none;
+    border-left: none;
+}
+
+.log{
+  margin-top: 10px;
+  font-size: 20px;
+  color:#626365;
+}
+.valid{
+  border-bottom: 1.5px solid green;
+  outline:none;
+}
+.invalid{
+  border-bottom: 1.5px solid #337ab7;
+  outline:none;
+}
+.icon{
+ background-image: url('circle.png');
+}
+.seperator{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 20px;
+}
+.error{
+  color: red;
+}
+.form_main1{
+
+  background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border: 5px solid #ffffff;
+    width: 473px;
+    margin-left: 300px;
+    padding: 24px;
+    border-radius: 14%;
+  
+}
+a{
+  color:rgb(16, 124, 128);
+}

@@ -1,0 +1,197 @@
+#main{
+    margin-top: 50px;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+}
+#from_bar{
+    color: #000;
+    background: #fff;
+    border-radius: 3px;
+    padding: 12px 10px;
+    width: 19%;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+}
+
+#to_bar{
+    color: #000;
+    background: #fff;
+    border-radius: 3px;
+    padding: 12px 10px;
+    width: 19%;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+}
+.search{
+    padding: 30px;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+}
+#searchbtn{
+    color: #FFF;
+    background-color:#2193b0  ;
+    border-radius: 3px;
+    padding: 12px 10px;
+    width: 19%;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 12px;
+}
+.submain{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
+.heading{
+    width: 85%;
+    margin: 10px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Open Sans', sans-serif, Tahoma, Arial!important;
+    font-size: 18px;
+    font-weight: 600;
+}
+.heading1{
+    width: 85%;
+    padding: 20px;
+    margin: 10px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFF;
+    font-family: 'Open Sans', sans-serif, Tahoma, Arial!important;
+    font-size: 15px;
+    font-weight: 530;
+    border-radius: 12px;
+    
+}
+.heading1 div{
+    margin-left: -35px;
+    width: 120px;
+}
+#head{
+    display: none;
+}
+.train_box{
+    width: 95%;
+    margin: 10px auto 0 auto;
+    display: table;
+    background-color: #fff;
+}
+a{
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    color: #2196f3;
+}
+.book{
+    background: #f26722;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+}
+
+.arrange{
+    display: flex;
+    margin-left: 2px;
+}
+.iconic{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size:10px;
+}
+#arrives{
+    margin-left: 30px;
+}
+#depart{
+    margin-left: 20px; 
+}
+#message{
+    font-size: 20px;
+}
+
+
+.whole{
+    margin-top: 67px;
+    width: 53%;
+    display: grid;
+    grid-template-columns: 50% auto;
+    margin-left: 94px;
+}
+#wholedisplay_to{
+    margin-left: 431px;
+}
+ .whole div{
+    background-color: white;
+    margin-top:-30px;
+    width: 19vw;
+    height: 50px;
+    font-size: 15px;
+}
+.whole>div>div>li {
+    list-style-type: none;
+    font-size: 18px;
+} 
+
+
+
+
+
+.icon-ups{
+    font-size: 20px;
+    color: red;
+}
+.icon-ups1{
+    font-size: 20px;
+    color: red;
+}
+.icon-ups2{
+    font-size: 20px;
+    color: red;
+}
+
+
+
+.icon-up{
+    font-size: 10px;
+    color: black;
+}
+.icon-up1{
+    font-size: 10px;
+    color: black;
+}
+.icon-up2{
+    font-size: 10px;
+    color: black;
+}
+
+
+.icon-downs{
+    font-size: 20px;
+    color: red;
+}
+.icon-downs1{
+    font-size: 20px;
+    color: red;
+}
+.icon-downs2{
+    font-size: 20px;
+    color: red;
+}
+
+
+.mybook{
+    margin-left: 1130px;
+}
