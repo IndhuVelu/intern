@@ -40,7 +40,7 @@ train_details.search=async(req,res)=>{
             console.log('sasa',req.body)
             var from = req.body.startingLocation;
             var to = req.body.endingLocation;
-            var date = req.body.date;
+//             var date = req.body.date;
             var offset=req.body.offset;
            let response= await train_detail.findAll({
             where:{
