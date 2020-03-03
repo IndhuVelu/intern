@@ -78,7 +78,7 @@ const reserved_details=()=>{
     cron.schedule("1 *  * *  * *", function() {
         console.log("---------------------");
         console.log("Running Cron Job");
-        var datetime = new Date();
+//         var datetime = new Date();
           reserved.update(
             {status:0},
             
