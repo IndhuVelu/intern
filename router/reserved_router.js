@@ -33,7 +33,7 @@ const router2=(app)=>{
       app.post('/reservedemail',async (req,res)=>{
   
         console.log(req.body);
-        var result=await reseved_Details.reservedemail(req,res);
+        await reseved_Details.reservedemail(req,res);
         // res.send(result)
     })
 }
